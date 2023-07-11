@@ -120,7 +120,7 @@ body {
 
 .main-article__header {
   text-transform: uppercase;
-  font-size: calc(var(--index) * 1.8);
+  font-size: 24px;
   letter-spacing: calc(var(--index) / 7.5);
   transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
   transition: var(--transition);
@@ -129,7 +129,7 @@ body {
 
 .main-article_facts-cat {
   max-width: 500px;
-  font-size: calc(var(--index) * 1);
+  font-size: 20px;
   margin-top: calc(var(--index) / 1);
   transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
   transition: var(--transition);
