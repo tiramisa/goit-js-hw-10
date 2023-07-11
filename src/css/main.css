@@ -128,7 +128,7 @@ body {
 }
 
 .main-article_facts-cat {
-  max-width: calc(var(--index) * 30);
+  max-width: 500px;
   font-size: calc(var(--index) * 1);
   margin-top: calc(var(--index) / 1);
   transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
@@ -142,6 +142,7 @@ body {
   opacity: 0.45;
   font-size: calc(var(--index)*1);
   letter-spacing: calc(var(--index) / 37.5);
+  top: 90%;
 }
 
 .content {
