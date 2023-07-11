@@ -6,38 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Homework 10</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/cat.css">
+  <script src="libs/gsap/gsap.min.js" defer></script>
+  <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+  <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
   <script src="js/app.js" defer></script>
+  <script src="index.js" type="module"></script>
 </head>
 
 <body>
-  <header class="main-header">
-    <div class="layers">
-      <div class="layer__header">
-        <div class="layers__caption">Welcome to Catland</div>
-        <div class="layers__title">FAIRY FOREST</div>
-      </div>
-      <div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
-      <div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
-      <div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+  <div class="wrapper">
+    <div class="content">
+      <header class="main-header">
+        <div class="layers">
+          <div class="layer__header">
+            <div class="layers__caption">Welcome to Catland</div>
+            <div class="layers__title">FAIRY FOREST</div>
+          </div>
+          <div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
+          <div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
+          <div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+        </div>
+      </header>
+      <article class="main-article" style="background-image: url(img/dungeon.jpg);">
+        <div class="main-article__content">
+          <h2 class="main-article__header">CAT FACTS</h2>
+          <p class="main-article_facts-cat">Cats are believed to be the only mammals who don't taste sweetness. Cats are
+            nearsighted, but their peripheral
+            vision
+            and night vision are much better than that of humans. Cats are supposed to have 18 toes (five toes on each
+            front
+            paw;
+            four toes on each back paw). Cats can jump up to six times their length.</p>
+          <select class="breed-select"></select>
+          <p class="loader main-article_facts-cat">Loading data, please wait...</p>
+          <p class="error main-article_facts-cat">Oops! Something went wrong! Try reloading the page!</p>
+          <div class="cat-info"></div>
+        </div>
+        <div class="copy">&#169; CatSoft</div>
+      </article>
+
     </div>
-  </header>
-  <article class="main-article" style="background-image: url(img/dungeon.jpg);">
-    <div class="main-article__content">
-      <h2 class="main-article__header">CAT FACTS</h2>
-      <p class="main-article_facts-cat">Cats are believed to be the only mammals who don't taste sweetness. Cats are
-        nearsighted, but their peripheral
-        vision
-        and night vision are much better than that of humans. Cats are supposed to have 18 toes (five toes on each front
-        paw;
-        four toes on each back paw). Cats can jump up to six times their length.</p>
-    </div>
-    <div class="copy">&#169; WebDisign tiramisa</div>
-  </article>
-  <select class="breed-select"></select>
-  <p class="loader">Loading data, please wait...</p>
-  <p class="error">Oops! Something went wrong! Try reloading the page!</p>
-  <div class="cat-info"></div>
-  <script src="index.js" type="module"></script>
+  </div>
 </body>
 
 </html>

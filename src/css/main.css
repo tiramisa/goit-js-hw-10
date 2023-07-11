@@ -7,6 +7,7 @@
 :root {
   --index: calc(1vw+1vh);
   --text: #f6f6df;
+  --transition: transform .75s cubic-bezier(.075, .5, 0, 1);
 }
 
 @font-face {
@@ -61,6 +62,7 @@ body {
   background-position: center;
   will-change: transform;
   z-index: 2;
+  transition: var(--transition);
 }
 
 .layers__base {
@@ -79,6 +81,7 @@ body {
 .layer__header {
   z-index: 1;
   transform: translate3d(0, calc(var(--scrollTop) /2), 0);
+  transition: var(--transition);
   will-change: transform;
   text-transform: uppercase;
   font-weight: 900;
@@ -120,6 +123,7 @@ body {
   font-size: calc(var(--index) * 1.8);
   letter-spacing: calc(var(--index) / 7.5);
   transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
+  transition: var(--transition);
   will-change: transform;
 }
 
@@ -128,6 +132,7 @@ body {
   font-size: calc(var(--index) * 1);
   margin-top: calc(var(--index) / 1);
   transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
+  transition: var(--transition);
   will-change: transform;
 }
 
@@ -137,4 +142,8 @@ body {
   opacity: 0.45;
   font-size: calc(var(--index)*1);
   letter-spacing: calc(var(--index) / 37.5);
+}
+
+.content {
+  will-change: transform;
 }
