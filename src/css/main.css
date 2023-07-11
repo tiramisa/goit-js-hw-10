@@ -101,7 +101,7 @@ body {
 }
 
 .layers__caption {
-  font-size: calc(var(--index)/1);
+  font-size: 24px;
   letter-spacing: calc(var(--index)/4);
   margin-top: calc(var(--index)*1);
 }
