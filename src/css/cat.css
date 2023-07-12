@@ -1,0 +1,20 @@
+.cat-info img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.cat-info p {
+  margin-bottom: 10px;
+}
+
+.loader {
+  display: none;
+  color: green;
+}
+
+.error {
+  display: none;
+  color: red;
+}

@@ -87,9 +87,6 @@ body {
   font-weight: 900;
   color: var(--text);
   text-shadow: 0 0 15px #efd498;
-}
-
-.layer__header {
   text-transform: uppercase;
   font-size: calc(var(--index) * 1.8);
   letter-spacing: calc(var(--index) / 7.5);
