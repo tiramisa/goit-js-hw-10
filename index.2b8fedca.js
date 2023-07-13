@@ -1,0 +1,2 @@
+let e=[];fetch("https://api.thecatapi.com/v1/breeds?api_key=live_ATkDsnwAvU937nPda3qiR2ikVv7ea9Bi3sQ0ez5BCTcp5A1d1bJkzyvl3CMZEOEb").then(e=>e.json()).then(t=>{e=t=t.filter(e=>{var t;return(null===(t=e.image)||void 0===t?void 0:t.url)!=null});for(let t=0;t<e.length;t++){let n=e[t],l=document.createElement("option");n.image&&(l.value=t,l.innerHTML=`${n.name}`,document.getElementById("breed-select").appendChild(l))}}).catch(function(e){console.log(e)});
+//# sourceMappingURL=index.2b8fedca.js.map
