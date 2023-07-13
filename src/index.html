@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="css/cat.css">
   <script src="js/cat-ser.js" type="module"></script>
   <script src="js/cat-api.js" type="module"></script>
-  <!-- <script src="libs/gsap/gsap.min.js" defer></script>
+  <script src="libs/gsap/gsap.min.js" defer></script>
   <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
   <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
-  <script src="js/app.js" defer></script> -->
-  <!-- <script src="js/index.js" type="module"></script> -->
-  <!-- <script src="js/cat-api.js" type="module"></script> -->
+  <script src="js/app.js" defer></script>
+  <script src="js/cat-ser.js" type="module" defer></script>
+  <script src="js/cat-api.js" type="module" defer></script>
 </head>
 
 <body>
@@ -41,10 +41,12 @@
             front
             paw;
             four toes on each back paw). Cats can jump up to six times their length.</p> <select
-            class="breed-select"></select>
+            id="breed-select"></select>
           <p class="loader main-article_facts-cat">Loading data, please wait...</p>
           <p class="error main-article_facts-cat">Oops! Something went wrong! Try reloading the page!</p>
-          <div class="cat-info"></div>
+          <div class="cat-info">
+            <img id="breed_image"></img>
+          </div>
         </div>
         <div class="copy">&#169; CatSoft</div>
       </article>
